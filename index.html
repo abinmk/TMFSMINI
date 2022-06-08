@@ -1,0 +1,74 @@
+
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <title>TMFS MINI</title>
+    <link rel="stylesheet" href="styles.css">
+</head>
+<style>
+
+</style>
+<body>
+    <header>
+        
+        <div class="container">
+            <img src="https://i.ibb.co/GTsMDs2/tiera-horizontal-orange.png" alt="tiera-horizontal-orange" height="40px" class="logo" >
+        <span class="tmfs">TMFS MINI CONTROLLER</span>
+        <nav>
+            <ul>
+                <li><a href="#">Home</a></li>
+                <li><a href="#">Settings</a></li>
+                <li><a href="https://www.portal.tieraonline.in/_module/knowledgebase/view/base/6">User manual</a></li>
+                <li><a href="#">Login</a></li>
+            </ul>
+        </nav>
+    </div>
+    </header>
+
+    </body>
+
+
+<section>
+<div class="contentTmfs">
+    <div><img src="https://i.ibb.co/n7ym8Qg/mfs-logo.png" class="logotmfs" width="400px">
+    </div>
+     
+        
+            <div class="slidecontainer">
+                
+                <form>
+                <table  class="tableSlider">
+                <tr>
+                    <td><h1 id="setrpm">SET RPM (0 - 3000)</h1>
+                    <input id="amount" type="number" value="200" min="0" max="3000" />
+                    <br><br>
+                    <input  class="slider" id="myRange" type="range" min="0" max="3000"/>
+                    </td>   
+                </tr>  
+
+                </table>
+            </form>     
+            </div>
+       
+</div>
+ 
+    </section>
+    
+
+    <script>
+        var slider = document.getElementById("myRange");
+        var output = document.getElementById("amount");
+        output.innerHTML = slider.value;
+        
+        slider.oninput = function() {
+          output.innerHTML = this.value;
+        }
+        </script>
+
+
+</body>
+
+</html>
+
+
+
